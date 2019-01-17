@@ -1,0 +1,51 @@
+{
+  "name": "air-energy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Проект Air Energy для its.agency",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gronula/air-energy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gronula/air-energy/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.4.4",
+    "browser-sync": "2.26.3",
+    "del": "3.0.0",
+    "eslint": "5.11.1",
+    "eslint-config-htmlacademy": "0.5.2",
+    "gulp": "4.0.0",
+    "gulp-cache": "1.0.2",
+    "gulp-csso": "3.0.1",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-imagemin": "5.0.3",
+    "gulp-less": "4.0.1",
+    "gulp-load-plugins": "1.5.0",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-rename": "1.4.0",
+    "gulp-uglify": "3.0.1",
+    "gulp-webp": "3.0.0",
+    "stylelint": "9.9.0",
+    "stylelint-config-htmlacademy": "0.1.1"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "eslint": "eslint source/js/",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run eslint && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "engines": {
+    "node": "8.11"
+  }
+}
